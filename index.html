@@ -1,0 +1,114 @@
+<html>
+
+<head>
+    <title>Happy Birthday</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .icon{
+            width:50px;
+            height:50px;
+        }
+        .noidung{
+            padding-top: 20px;
+        }
+        .cake{
+            margin-top:100px;
+            display:none;
+        }
+        .dinhdanganh{
+            width:300px;
+            height:380px;
+        }
+        .typed {
+            width: 550px;
+            height: 380px;
+        }
+        .typed1{
+            width: 300px;
+            height: 380px;
+        }
+        
+    </style>
+    <script>
+        var typed = new Typed("#typed", {
+            stringsElement: "#typed-strings",
+            typeSpeed: 50, // Tốc độ xuất hiện của chữ (có thể điều chỉnh)
+            startDelay: 1000, // Trễ 1 giây trước khi hiện hình ảnh
+            onComplete: function () {
+                // Khi hoàn thành hiển thị chữ, bạn có thể thực hiện các hành động khác ở đây
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="loader">
+                <button id="play">GỬI: Bé QUÂN KUN</button>
+            </div>
+        </div>
+    </div>
+    <audio class="song" controls loop>
+        <source src="music.mp3">
+    </audio>
+    <canvas id="confetti"></canvas>
+    <div class="main">
+        <div class="container pt-5">
+            <div class="row">
+
+                <div class="col-12 col-xl-6 mx-auto">
+                    <img src="img/banner.png" alt="">
+                </div>
+
+                <div class="col-12  text-center">
+                    <div id="name" class="area">GỬI BÉ QUÂN IU DẤU</div>
+                </div>
+
+                <div class="col-12 text-center noidung">
+                    <div class="type-wrap ">
+                        <div id="typed-strings" class="typing">
+                            <h2>Happy Birthday <i id="nae">VŨ ĐỨC MINH QUÂN</i></h2>
+                            <h2>CHÚC QUÂN SINH NHẬT VUI VẺ <img class="icon" src="https://img.icons8.com/arcade/64/filled-like.png" alt="filled-like" /></h2>
+                            <h2>SỚM TÌM ĐƯỢC EM IU NHA <br /><img style="width:300px;height:350px;" src="img/anh1.png" alt=""></h2>
+                            <h2>HỌC TỐT! KHÔNG BAO GIỜ BỊ RỚT MÔN NỮA NÈ <img class="icon" src="https://img.icons8.com/bubbles/50/filled-like.png" alt="filled-like" /><br /><img style="width:300px;height:350px;" src="img/anh10.png" alt=""></h2>
+                            <h2>ĐẶC BIỆT LÀ ĐỢI NGÀY TÁI NGỘ NHA <img class="icon" src="https://img.icons8.com/arcade/64/filled-like.png" alt="filled-like" /><img class="icon" src="https://img.icons8.com/arcade/64/filled-like.png" alt="filled-like" /><img class="icon" src="https://img.icons8.com/arcade/64/filled-like.png" alt="filled-like" /><img class="icon" src="https://img.icons8.com/arcade/64/filled-like.png" alt="filled-like" /><img class="icon" src="https://img.icons8.com/arcade/64/filled-like.png" alt="filled-like" /></h2>
+                            <h2><img class="dinhdanganh typed1" src="img/anh2.png" alt=""></h2>
+                            <h2></h2>
+                            <h2><img class="typed1" src="img/anh3.png" alt=""></h2>
+                            <h2></h2>
+                            <h2><img class="typed1" src="img/anh4.png" alt=""></h2>
+                            <h2></h2>
+                            <h2><img class="typed" src="img/anh5.png" alt=""></h2>
+                            <h2></h2>
+                            <h2><img class="typed" src="img/anh6.png" alt=""></h2>
+                            <h2></h2>
+                            <h2><img class="typed" src="img/anh7.png" alt=""></h2>
+                            <h2></h2>
+                            <h2><img class="typed" src="img/anh8.png" alt=""></h2>
+                            <h2></h2>
+                            <h2><img class="typed" src="img/anh9.png" alt=""> </h2>
+                            <h2>TÙNG GỬI CHO QUÂN CÁI BÁNH SINH NHẬT TO BÉO NÀY <br /><img class="typed" src="img/cakesn.png" alt="">
+                            </h2>
+                        </div>
+                        <span id="typed" style="white-space:pre;"></span>
+                    </div>
+                </div>
+
+                <div class="col-12 col-xl-3 cake">
+                    <img src="img/cake.gif" alt="">
+                </div>
+            </div>
+        </div>
+        <img src="img/Balloon-Border.png" style="width:100%" class="balloon-border">
+    </div>
+</body>
+<script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/typed.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>
